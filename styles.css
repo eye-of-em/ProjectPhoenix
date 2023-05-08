@@ -1,0 +1,76 @@
+/* style.css */
+h1 {
+    color:  #ECE5CD;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    background-color: #0C2516;
+    }
+
+
+        
+          
+        .square-button {
+          
+          text-decoration: none;
+          border: none;
+          padding: 40px 40px;
+          font-size: 16px;
+          background-color: #ECE5CD;
+          color: #000000;
+          border-radius: 5px;
+          box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+          cursor: pointer;
+          outline: none;
+          transition: 0.2s all;
+      }
+      
+        
+      .square-button:active {
+          transform: scale(0.98);
+          /* Scaling button to 0.98 to its original size */
+          box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+          /* Lowering the shadow */
+      }
+
+      .button-grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center
+      }
+
+      @media (max-width: 800px) {
+        .button-grid {
+          grid-template-columns: repeat (2,1fr);
+        }
+      }
+
+ 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A3BB90;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
