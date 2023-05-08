@@ -11,18 +11,22 @@ body {
         
           
         .square-button {
-          
+
           text-decoration: none;
           border: none;
-          padding: 40px 40px;
+          padding: 40px;
           font-size: 16px;
           background-color: #ECE5CD;
           color: #000000;
-          border-radius: 5px;
+          border-radius: 10px;
           box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
           cursor: pointer;
           outline: none;
           transition: 0.2s all;
+          height: 150px;
+          width: 150px
+          
+                            
       }
       
         
@@ -32,6 +36,34 @@ body {
           box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
           /* Lowering the shadow */
       }
+
+      .small-button {
+
+        background-color: #ECE5CD; /* Green */
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer; 
+      }
+
+      .button1 {
+        background-color: #ECE5CD; 
+        color: black; 
+        border: 2px solid #000000;
+        border-radius: 5px;
+        float: right;
+      }
+      
+      .small-button:active {
+        transform: scale(0.98);
+      }
+
+    
 
       .button-grid {
         display: grid;
@@ -74,3 +106,23 @@ body {
   li a:hover {
     background-color: #111;
   }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px 10px 5px 8px;
+    gap: 10px;
+    background-color: #ECE5CD;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+    transition: 0.3s;
+    width: 75%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 50px;
+    height: 40px;
+  }
+
+
+
